@@ -39,7 +39,7 @@ class App extends Component {
          root:'pages/business/',
          pages:[
            'my/index', //我的
-           
+           'text/index', //测试多文件上传
           ],
       },
     ],

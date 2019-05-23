@@ -31,7 +31,6 @@ export default class Login extends Component<{} , IndexSate > {
   }
 
   handleChangePs = (e:any) => {
-      
     this.setState({pwd : e.detail.value})
   }
 

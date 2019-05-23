@@ -19,7 +19,7 @@ interface urlObject {
 
 function request ( object:urlObject  , callback : Function  ){
     //获取token
-    const token = Taro.getStorageSync('tk')
+    const token = Taro.getStorageSync('token')
     const baseUrl :string = url + object.url 
 
     const data : any= Object.assign({

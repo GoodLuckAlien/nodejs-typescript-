@@ -6,8 +6,14 @@ class Index extends Component{
    constructor(){
        super()
    }
+  
+   routerGo=(url:string)=>{
+      Taro.navigateTo({
+          url,
+      })
+   }
    render(){
-       return<View>hello world</View> 
+       return<View onClick={this.routerGo.bind(this,'/pages/business/text/index')} >多文件上传</View> 
    }
 }
 

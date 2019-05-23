@@ -46,7 +46,6 @@ class Index extends Component<{},IndexStates>{
       //  Taro.navigateTo({url: '/pages/root/login/index'})
        let token = Taro.getStorageSync('token')
        if(token){
-         console.log('00000')
         Taro.switchTab({url: '/pages/root/homes/index'})
        }
        request(obj,((res : any )=>{
